@@ -1,0 +1,15 @@
+[project]
+name = "mid-training-dataset-filtering"
+version = "0.1.0"
+description = "Datatrove examples for Hugging Face dataset filtering and deduplication"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "datatrove",
+  "datasets",
+  "transformers",
+  "sentencepiece",
+]
+
+[tool.uv]
+package = false
