@@ -28,7 +28,7 @@ uv sync
 
 ## 실행
 
-기본 토크나이저는 `google/gemma-2-9b` 입니다.
+기본 토크나이저는 `google/gemma-3-4b-it` 입니다.
 
 ```bash
 uv run python pipeline_examples.py \
@@ -40,7 +40,7 @@ uv run python pipeline_examples.py \
 ```bash
 uv run python pipeline_examples.py \
   --output-dir /data/math_dedup \
-  --tokenizer google/gemma-2-9b \
+  --tokenizer google/gemma-3-4b-it \
   --similarity-threshold 0.92 \
   --tasks 8
 ```
@@ -58,7 +58,7 @@ uv run python pipeline_examples.py \
 ## 주요 옵션
 
 - `--output-dir` (필수): 결과 저장 경로
-- `--tokenizer` (기본: `google/gemma-2-9b`): 토큰 카운트용 토크나이저
+- `--tokenizer` (기본: `google/gemma-3-4b-it`): 토큰 카운트용 토크나이저
 - `--similarity-threshold` (기본: `0.92`): MinHash 중복 판단 임계치
 - `--datasets` (기본: 위 6개): 처리할 HF 데이터셋 목록
 - `--split` (기본: `train`): HF split
