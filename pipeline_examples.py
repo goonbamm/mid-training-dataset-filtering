@@ -169,7 +169,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--output-dir", required=True)
     p.add_argument("--cache-dir", default="./hf_cache")
     p.add_argument("--split", default="train")
-    p.add_argument("--tokenizer", default="google/gemma-2-9b")
+    p.add_argument("--tokenizer", default="google/gemma-3-4b-it")
     p.add_argument("--datasets", nargs="*", default=DEFAULT_DATASETS)
     p.add_argument("--tasks", type=int, default=4)
     p.add_argument("--similarity-threshold", type=float, default=0.92)
